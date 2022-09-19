@@ -1,0 +1,395 @@
+/* Nedded Css start */
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+/* .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+/* Nedded Css End */
+
+/* ================================
+Header Css Start ==============================
+*/
+.main{
+    background-image: url(ia_200000019.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / 60%);
+    z-index: -1;
+}
+.header-menu {
+    background-color: rgb(0 0 0 / 21%);
+}
+.image {
+    width: 30%;
+    margin-left: 90px;
+}
+.image img {
+    width: 150px;
+}
+
+/* Main MEnu Start */
+
+.menu-wrapper{
+    width: 55%;
+}
+.menu-wrapper ul {
+   text-align: center;
+}
+.menu-wrapper ul li{
+    display: inline-block;
+}
+
+.menu-wrapper ul li a {
+    display: block;
+    color: #fff;
+    padding: 0 15px;
+    text-decoration: none;
+}
+.menu-wrapper ul li a:hover{}
+.menu-wrapper ul li:nth-child(1) a{
+    color: #c69453;
+}
+/* Main MEnu End */
+
+/* Before After */
+.menu-wrapper ul li a::after {
+    content: "";
+    height: 2px;
+    width: 82%;
+    position: absolute;
+    top: 44px;
+    left: 11px;
+    background: #c69453;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: .3s;
+}
+.menu-wrapper ul li:hover ::after{
+visibility: visible;
+opacity: 1;
+transform: scaleX(1);
+}
+/* Dropdown Start */
+.menu-wrapper ul li{
+    position: relative;
+   
+    
+}
+.menu-wrapper ul li .dropdown {
+    position: absolute;
+    top: 200%;
+    left: -58px;
+    background: #fcfcfb;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    padding: 0;
+    transform: scaleY(0);
+}
+.menu-wrapper ul li:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+.menu-wrapper ul li .dropdown li:hover{
+    background: #c0c0bf;
+    
+}
+.menu-wrapper ul li .dropdown li a:hover{
+    color: #c69453;
+}
+.menu-wrapper ul li .dropdown li {
+    display: inline-block;
+    width: 200px;
+    padding: 6px 25px;
+}
+.menu-wrapper ul li .dropdown li a {
+    color: #000;
+    display: block;
+    padding: 16px 0;
+}
+.menu-wrapper ul li .dropdown li a::after{
+    content: "";
+    visibility: hidden;
+    opacity: 0;
+}
+/* Dropdown END */
+/* Extra Work */
+
+.parina li{
+    padding: 0 15px;
+}
+.dropdown .parina-2 li{
+    padding: 0;
+}
+
+
+
+
+/*====================== article css start ==========================*/
+.article{}
+.article h1 {
+    color: #fff;
+    padding: 160px 0 0px 0;
+    font-size: 66px;
+    margin: 0;
+    font-family: arial;
+}
+.article h3{
+    color: #fff;
+    position: relative;
+    
+}
+.article h3::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    height: 2px;
+    width: 60px;
+    background: #ddd;
+    
+}
+.article h3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 61%;
+    height: 2px;
+    width: 60px;
+    background: #ddd;
+    
+}
+.default-btn a:hover{
+    background: #fcfcfb;
+    color: #c69453;
+}
+.default-btn a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background: #c69453;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-family: arial;
+    margin-top: 10px;
+    font-size: 11px;
+    transition: all .3s ease;
+}
+/* article css End */
+
+/* Nedded Css End */
+
+/* ================================
+Header Css End ==============================
+*/
+
+
+
+
+/* =====================Card section Start==================== */
+
+.card {
+    background: #f8f8f9;
+    padding: 100px 115px;
+   
+}
+.card-items{
+    width: 23%;
+    margin-right: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    transition: all .3s ease;
+}
+.card-items:hover{
+    background: #e7e5e3;
+}
+.card-items:hover  a{
+    background: #fff;
+    color: #c69453;
+}
+.card-items img {
+    transition: .8s;
+    margin: 25px 0;
+}
+.card-items:hover img{
+    transform: rotateY(360deg);
+}
+.card-items h3 {
+    
+    font-size: 15px;
+    padding: 0 10px;
+}
+.card-items p {
+    
+    width: 68%;
+    line-height: 23px;
+    margin-left: 16%;
+    font-size: 14px;
+    
+}
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background: #c69453;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-family: arial;
+    margin-top: 10px;
+    font-size: 13px;
+    margin-bottom: 30px;
+    transition: all .3s ease;
+}
+.btn a:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(10px);
+}
+/* =====================Card section End==================== */
+
+/* =====================About Section Start================= */
+
+
+.about{
+    background: #f8f8f9;
+}
+.video{
+    width: 40%;
+}
+.article-2 {
+    width: 56%;
+    margin-right: -30px;
+}
+.article-2 h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.article-2 h2 span{
+    color: #c69453;
+}
+.article-2 p {
+    width: 73%;
+    margin: 30px 0;
+    line-height: 25px;
+    font-family: arial;
+}
+.article-2 details {
+    margin-bottom: 15px;
+}
+.button a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background: #000;
+    padding: 15px 30px;
+    font-family: arial;
+    margin-top: 10px;
+    font-size: 11px;
+    transition: all .3s ease;
+}
+.button a:hover{
+    background:  #c69453;
+    color: #fff;
+}
+
+
+/* =====================About Section End================= */
+
+/* =====================Form Section Start================ */
+
+
+.form {
+    background: #f8f8f9;
+    background-image: url(./img/ia_200000022.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 745px;
+}
+.form-itmes {
+    width: 40%;
+    padding: 100px 0 0 0;
+    margin-left: 10%;
+}
+.form-itmes h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0 0 0;
+}
+.form-itmes article p {
+    margin-bottom: 25px;
+}
+.form-itmes form{}
+.form-itmes form input {
+    margin: 5px 0;
+    padding: 10px 315px 10px 10px;
+    border: 1px solid #ddd;
+}
+textarea {
+    overflow: auto;
+    margin: 5px 0;
+    padding: 10px 252px 10px 10px;
+    border: 1px solid #ddd;
+}
+.button-2 a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background: #c69453;
+    padding: 15px 30px;
+    font-family: arial;
+    margin-top: 10px;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+/* =====================Form Section End================ */
+
+/* =====================Footer Section Start============= */
+
+.footer{
+    background: #6d6d6d;
+    padding: 15px 0;
+}
+.f-blog{
+    color: #fff;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font {
+    width: 50%;
+}
+.font ul li{
+    display: inline-block;
+    color: #fff;
+    padding: 0 17px;
+}
+/* =====================Footer Section End============= */
